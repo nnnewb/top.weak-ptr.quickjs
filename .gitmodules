@@ -3,4 +3,4 @@
 	url = https://github.com/cqmoe/cqcppsdk
 [submodule "extern/QuickJS"]
 	path = extern/QuickJS
-	url = git@github.com:quickjs-zh/QuickJS.git
+	url = https://github.com/quickjs-zh/QuickJS
