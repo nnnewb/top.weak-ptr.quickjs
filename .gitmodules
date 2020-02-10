@@ -4,6 +4,3 @@
 [submodule "extern/QuickJS"]
 	path = extern/QuickJS
 	url = git@github.com:quickjs-zh/QuickJS.git
-[submodule "extern/quickjspp"]
-	path = extern/quickjspp
-	url = https://github.com/quickjs-zh/quickjspp
