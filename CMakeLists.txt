@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(CQPqjs VERSION 0.1.0) # 填写项目名称
+project(top.weak-ptr.quickjs VERSION 0.1.0) # 填写项目名称
 
 set(CMAKE_CXX_STANDARD 17) # 设置 C++ 标准版本为 C++17, 必须
-
 
 # QuickJS C 库
 file(STRINGS "extern/QuickJS/VERSION" QJS_VER)

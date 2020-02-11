@@ -1,12 +1,13 @@
 {
     "ret": 1,
     "apiver": 9,
-    "name": "CQPjs",
+    "name": "QuickJS",
     "version": "0.1.0",
     "version_id": 1,
     "author": "weak_ptr",
-    "description": "简单的js插件",
-    "event": [ // 可以修改 priority 来调整插件的优先级, 其它字段不可修改, 否则将无法使用
+    "description": "基于QuickJS的简单JS插件",
+    "event": [
+        // 可以修改 priority 来调整插件的优先级, 其它字段不可修改, 否则将无法使用
         {
             "id": 1003,
             "type": 1003,
