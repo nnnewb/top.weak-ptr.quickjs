@@ -34,6 +34,13 @@ cq_set_app_id(${APP_ID}) # 设置 app id, 必须
 
 set(LIB_NAME "app") # 酷Q要求开发阶段的应用名为 app.dll
 
-set(CQCPPSDK_DEV_MODE ON)
+#set(CQCPPSDK_DEV_MODE ON)
+#cq_add_app(${LIB_NAME} ${SOURCE_FILES}) # 添加 std 模式的动态链接库构建目标
+#target_link_libraries(${LIB_NAME} quickjs)
+
+set(CQCPPSDK_DEV_MODE OFF)
 cq_add_app(${LIB_NAME} ${SOURCE_FILES}) # 添加 std 模式的动态链接库构建目标
 target_link_libraries(${LIB_NAME} quickjs)
+add_custom_command(
+        TARGET ${LIB_NAME} POST_BUILD
+        COMMAND powershell.exe -ExecutionPolicy ByPass -File "${CMAKE_SOURCE_DIR}/scripts/install.ps1" ${CMAKE_BINARY_DIR})
